@@ -1,3 +1,5 @@
+from sdk.amaizing import so_amaizing
+
 def main():
     def this_fails():
         from sdk.amaizing import so_amaizing
