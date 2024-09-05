@@ -1,0 +1,18 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "sdk"
+version = "0.1.0"
+source = { editable = "libs/sdk" }
+
+[[package]]
+name = "uv-monorerpo"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "sdk" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "sdk", editable = "libs/sdk" }]
